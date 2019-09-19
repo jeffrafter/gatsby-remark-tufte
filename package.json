@@ -1,0 +1,40 @@
+{
+  "author": {
+    "name": "Jeff Rafter",
+    "email": "jeffrafter@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffrafter/gatsby-remark-tufte/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "@tufte-markdown/remark-figure-parser": "^1.0.0",
+    "@tufte-markdown/remark-figure-transformer": "^1.0.0",
+    "@tufte-markdown/remark-sidenotes": "^1.0.0",
+    "@tufte-markdown/remark-wrap-in-section": "^1.0.0",
+    "retext": "^5.0.0"
+  },
+  "deprecated": false,
+  "description": "Enable sidenotes and margin notes for your markdown",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "cross-env": "^5.1.4"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "tufte"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "gatsby-remark-tufte",
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffrafter/gatsby-remark-tufte"
+  },
+  "version": "1.0.3"
+}
