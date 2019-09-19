@@ -11,7 +11,7 @@
     "@tufte-markdown/remark-figure-parser": "^1.0.0",
     "@tufte-markdown/remark-figure-transformer": "^1.0.0",
     "@tufte-markdown/remark-sidenotes": "^1.0.0",
-    "@tufte-markdown/remark-wrap-in-section": "^1.0.0",
+    "@tufte-markdown/remark-wrap-in-section": "^2.0.1",
     "retext": "^5.0.0"
   },
   "deprecated": false,
@@ -36,5 +36,5 @@
     "type": "git",
     "url": "https://github.com/jeffrafter/gatsby-remark-tufte"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
