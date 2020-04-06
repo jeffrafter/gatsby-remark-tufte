@@ -1,8 +1,8 @@
-import getSlug from "speakingurl";
-import visit from "unist-util-visit";
-import select from "unist-util-select";
-import toHAST from "mdast-util-to-hast";
-import toHTML from "hast-util-to-html";
+const getSlug = require("speakingurl");
+const visit = require("unist-util-visit");
+const select = require("unist-util-select");
+const toHAST = require("mdast-util-to-hast");
+const toHTML = require("hast-util-to-html");
 
 const MARGINNOTE_SYMBOL = "{-}";
 
@@ -55,7 +55,7 @@ const extractNoteFromHtml = (note) => {
   };
 };
 
-export function transformer(tree) {
+function transformer(tree) {
   // "Regular" Sidenotes/Marginnotes consisting of a reference and a definition
   // Syntax for Sidenotes [^<number>] and somewhere else [^<number]: <markdown>
   // Syntax for Marginnotes [^<descriptor>] and somewhere else [^<descriptor]: {-}
@@ -65,7 +65,8 @@ export function transformer(tree) {
       `footnoteDefinition[identifier=${node.identifier}]`
     );
 
-    if (!target.length) throw new Error("No coresponding note found");
+    if (!target.length)
+      throw new Error(`No coresponding note found for "${node.identifier}"`);
 
     const notesAst =
       target[0].children.length && target[0].children[0].type === "paragraph"
@@ -94,4 +95,4 @@ export function transformer(tree) {
   return tree;
 }
 
-export default sidenotes;
+module.exports = sidenotes;

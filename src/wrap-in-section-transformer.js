@@ -1,10 +1,10 @@
-import visit from "unist-util-visit";
+const visit = require("unist-util-visit");
 
 function wrapInSection() {
   return transformer;
 }
 
-export function transformer(tree) {
+function transformer(tree) {
   const headingsMap = [];
   const newTree = [];
 
@@ -38,4 +38,4 @@ export function transformer(tree) {
   return tree;
 }
 
-export default wrapInSection;
+module.exports = wrapInSection;

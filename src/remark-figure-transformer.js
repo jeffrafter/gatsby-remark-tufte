@@ -1,11 +1,11 @@
-import visit from "unist-util-visit";
-import HTML from "html-parse-stringify";
+const visit = require("unist-util-visit");
+const HTML = require("html-parse-stringify");
 
 function tufteFigureTransformer() {
   return transformer;
 }
 
-export function transformer(tree) {
+function transformer(tree) {
   visit(tree, "tufteFigure", (node, index, parent) => {
     const openTagAst = HTML.parse(node.attributes.openingHtml);
 
@@ -34,4 +34,4 @@ export function transformer(tree) {
   return tree;
 }
 
-export default tufteFigureTransformer;
+module.exports = tufteFigureTransformer;

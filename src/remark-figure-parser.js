@@ -1,5 +1,5 @@
-import unified from "unified";
-import parser from "remark-parse";
+const unified = require("unified");
+const parser = require("remark-parse");
 
 const FIGURE_OPENING_TAG = "<figure";
 const OPENING_TAG = /<figure([^>]*)>/;
@@ -81,4 +81,4 @@ function isRemarkParser(parser) {
   );
 }
 
-export default tufteFigureParser;
+module.exports = tufteFigureParser;
