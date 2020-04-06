@@ -7,7 +7,6 @@
     "url": "https://github.com/jeffrafter/gatsby-remark-tufte/issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0",
     "html-parse-stringify": "^1.0.3",
     "remark-parse": "^4.0.0",
     "unified": "^6.1.6",
@@ -21,11 +20,6 @@
   },
   "deprecated": false,
   "description": "Enable sidenotes and margin notes for your markdown",
-  "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "cross-env": "^5.1.4"
-  },
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -34,12 +28,9 @@
   "license": "MIT",
   "main": "index.js",
   "name": "gatsby-remark-tufte",
-  "peerDependencies": {
-    "gatsby": ">2.0.0-alpha"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jeffrafter/gatsby-remark-tufte"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
