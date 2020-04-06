@@ -15,8 +15,8 @@ plugins: [
   {
     resolve: `gatsby-transformer-remark`,
     options: {
-      plugins: [`gatsby-remark-tufte`]
-    }
-  }
+      plugins: [`gatsby-remark-tufte`],
+    },
+  },
 ];
 ```
