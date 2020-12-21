@@ -1,4 +1,4 @@
-# gatsby-remark-smartypants
+# gatsby-remark-tufte
 
 Converts sidenotes and margin notes as well as figures to
 output for use with [tufte-css](https://github.com/edwardtufte/tufte-css) using the markdown converters from [https://github.com/luhmann/tufte-markdown](https://github.com/luhmann/tufte-markdown).
