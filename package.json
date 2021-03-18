@@ -7,7 +7,7 @@
     "url": "https://github.com/jeffrafter/gatsby-remark-tufte/issues"
   },
   "dependencies": {
-    "html-parse-stringify": "^1.0.3",
+    "html-parse-stringify": "^2.0.1",
     "remark-parse": "^4.0.0",
     "unified": "^6.1.6",
     "retext": "^5.0.0",
